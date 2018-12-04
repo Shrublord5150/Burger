@@ -1,1 +1,15 @@
-<h1>Made it!</h1>
+<h2>Eat these burger's before someone else does!</h2>
+
+<ul>
+  {{#each burgers}}
+  {{#unless devoured}}
+  <div class="row">
+    <div class="col-xs-8 burger-list">
+      <p>{{id}} {{burger_name}}</p>
+    </div>
+    <div class="col-xs-4 float-right"><button data-id="{{id}}" class="btn btn-default devour-btn">Devour
+        it!</button></div>
+  </div>
+  {{/unless}}
+  {{/each}}
+</ul>
