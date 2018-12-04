@@ -21,7 +21,7 @@ router.get("/", function(req, res) {
     burger.create([
       "burger_name"
     ], [
-      req.body.burger_name
+      req.body.burger 
     ], function() {
       res.redirect("/");
     });
